@@ -1,0 +1,36 @@
+{
+  "name": "playwright---jayesh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "evershop install",
+    "build": "evershop build",
+    "start": "evershop start",
+    "start:debug": "evershop start --debug",
+    "user:create": "evershop user:create",
+    "user:changePassword": "evershop user:changePassword"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.1",
+    "@types/pg": "^8.15.5",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.1"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@evershop/evershop": "^2.0.1",
+    "dotenv": "^17.2.2",
+    "pg": "^8.16.3",
+    "playwright": "^1.54.2",
+    "playwright-core": "^1.54.2",
+    "undici-types": "^7.10.0",
+    "xlsx": "^0.18.5"
+  }
+}

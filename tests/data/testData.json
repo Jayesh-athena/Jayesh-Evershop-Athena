@@ -1,0 +1,28 @@
+{
+  "user": {
+    "name": "Test User",
+    "email": "testuser@example.com",
+    "password": "123456"
+  },
+  "admin": {
+    "email": "admin@admin.com",
+    "password": "admin@4554"
+  },
+  "product data": {
+    "Name" : "Jayesh Dhangar",
+    "SKU" : "QA",
+    "Price" : "2000",
+    "Weight": "70"
+  },
+   "coupon":{
+    "couponCode":"coupon100",
+    "description":" coupon best",
+    
+    "discount":"11",
+    "minAmount":"1222",
+    "minQyt":"25",
+    "email":"jayeshdhangar28@gmail.com",
+    "amount":"18"
+}
+  
+}
