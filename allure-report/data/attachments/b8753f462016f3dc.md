@@ -1,0 +1,248 @@
+# Page snapshot
+
+```yaml
+- link "EVERSHOP":
+  - /url: http://localhost:3000/admin
+  - img
+  - text: EVERSHOP
+- img
+- textbox "Search"
+- link "a":
+  - /url: "#"
+- list:
+  - listitem:
+    - text: Quick links
+    - list:
+      - listitem:
+        - link "Dashboard":
+          - /url: http://localhost:3000/admin
+      - listitem:
+        - link "New Product":
+          - /url: http://localhost:3000/admin/products/new
+      - listitem:
+        - link "New Coupon":
+          - /url: http://localhost:3000/admin/coupon/new
+  - listitem:
+    - text: Catalog
+    - list:
+      - listitem:
+        - link "Products":
+          - /url: http://localhost:3000/admin/products
+      - listitem:
+        - link "Categories":
+          - /url: http://localhost:3000/admin/categories
+      - listitem:
+        - link "Collections":
+          - /url: http://localhost:3000/admin/collections
+      - listitem:
+        - link "Attributes":
+          - /url: http://localhost:3000/admin/attributes
+  - listitem:
+    - text: Sale
+    - list:
+      - listitem:
+        - link "Orders":
+          - /url: http://localhost:3000/admin/orders
+  - listitem:
+    - text: Customer
+    - list:
+      - listitem:
+        - link "Customers":
+          - /url: http://localhost:3000/admin/customers
+  - listitem:
+    - text: Promotion
+    - list:
+      - listitem:
+        - link "Coupons":
+          - /url: http://localhost:3000/admin/coupons
+  - listitem:
+    - text: CMS
+    - list:
+      - listitem:
+        - link "Pages":
+          - /url: http://localhost:3000/admin/pages
+      - listitem:
+        - link "Widgets":
+          - /url: http://localhost:3000/admin/widgets
+  - listitem:
+    - link "Setting":
+      - /url: http://localhost:3000/admin/setting/store
+    - list
+- heading "Products" [level=1]
+- link "New Product":
+  - /url: http://localhost:3000/admin/products/new
+- heading "Status Product type" [level=3]:
+  - textbox "Search"
+  - button "Status":
+    - text: Status
+    - img
+  - button "Product type":
+    - text: Product type
+    - img
+- link "Clear filter":
+  - /url: "#"
+- table:
+  - rowgroup:
+    - row "Thumbnail Name Price SKU Stock Status":
+      - cell:
+        - checkbox
+      - cell "Thumbnail"
+      - cell "Name":
+        - text: Name
+        - button:
+          - img
+      - cell "Price":
+        - text: Price
+        - button:
+          - img
+      - cell "SKU"
+      - cell "Stock":
+        - text: Stock
+        - button:
+          - img
+      - cell "Status":
+        - text: Status
+        - button:
+          - img
+  - rowgroup:
+    - row
+    - row "New product D New product D $2,003.00 testD 22":
+      - cell:
+        - checkbox
+      - cell "New product D":
+        - img "New product D"
+      - cell "New product D":
+        - link "New product D":
+          - /url: /admin/products/edit/f0b81e3a-4c28-44d6-a6c8-87b62f82cd38
+      - cell "$2,003.00"
+      - cell "testD"
+      - cell "22"
+      - cell
+    - row "New product C New product C $2,002.00 testC 21":
+      - cell:
+        - checkbox
+      - cell "New product C":
+        - img "New product C"
+      - cell "New product C":
+        - link "New product C":
+          - /url: /admin/products/edit/dae84608-c09c-4b3c-98c1-9c90eb05229b
+      - cell "$2,002.00"
+      - cell "testC"
+      - cell "21"
+      - cell
+    - row "New product A New product A $2,000.00 testA 20":
+      - cell:
+        - checkbox
+      - cell "New product A":
+        - img "New product A"
+      - cell "New product A":
+        - link "New product A":
+          - /url: /admin/products/edit/d165dcef-f490-4927-b723-c4affdc9cb86
+      - cell "$2,000.00"
+      - cell "testA"
+      - cell "20"
+      - cell
+    - row "New product 1 New product 1 $2,000.00 test1 20":
+      - cell:
+        - checkbox
+      - cell "New product 1":
+        - img "New product 1"
+      - cell "New product 1":
+        - link "New product 1":
+          - /url: /admin/products/edit/51aeaa7c-de6f-4873-a596-a941aeb4002d
+      - cell "$2,000.00"
+      - cell "test1"
+      - cell "20"
+      - cell
+    - row "New product 3 New product 3 $2,000.00 test3 20":
+      - cell:
+        - checkbox
+      - cell "New product 3":
+        - img "New product 3"
+      - cell "New product 3":
+        - link "New product 3":
+          - /url: /admin/products/edit/c6164e3f-8b1e-4694-9c55-05da6423a316
+      - cell "$2,000.00"
+      - cell "test3"
+      - cell "20"
+      - cell
+    - row "New product 1 $2,000.00 test 20":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "New product 1":
+        - link "New product 1":
+          - /url: /admin/products/edit/26d5e9b2-42dd-41a3-aec7-138b3d5b560c
+      - cell "$2,000.00"
+      - cell "test"
+      - cell "20"
+      - cell
+    - row "Jayesh Dhangar $222.00 QA 20":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "Jayesh Dhangar":
+        - link "Jayesh Dhangar":
+          - /url: /admin/products/edit/80c7b888-ccb4-44d1-8edd-66f803602098
+      - cell "$222.00"
+      - cell "QA"
+      - cell "20"
+      - cell
+    - row "Striped Cotton Sweater $90.00 SCS-24680 150":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "Striped Cotton Sweater":
+        - link "Striped Cotton Sweater":
+          - /url: /admin/products/edit/dac6931f-1f01-4ed3-aeea-09436f90c44c
+      - cell "$90.00"
+      - cell "SCS-24680"
+      - cell "150"
+      - cell
+    - row "Denim Skinny Jeans $120.00 DSJ-54321 90":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "Denim Skinny Jeans":
+        - link "Denim Skinny Jeans":
+          - /url: /admin/products/edit/507fae53-0a92-428f-9a86-c9d12b5e5742
+      - cell "$120.00"
+      - cell "DSJ-54321"
+      - cell "90"
+      - cell
+    - row "Classic Leather Loafers $120.00 CLL-98765 120":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "Classic Leather Loafers":
+        - link "Classic Leather Loafers":
+          - /url: /admin/products/edit/0dd55339-69d4-4079-86d3-0e6b08519267
+      - cell "$120.00"
+      - cell "CLL-98765"
+      - cell "120"
+      - cell
+    - row "Floral Maxi Dress $100.00 FMD-12345 100":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "Floral Maxi Dress":
+        - link "Floral Maxi Dress":
+          - /url: /admin/products/edit/40f50482-337a-4457-b7b0-dbcf5c60252d
+      - cell "$100.00"
+      - cell "FMD-12345"
+      - cell "100"
+      - cell
+- text: Show
+- textbox: "20"
+- text: per page
+- combobox:
+  - option "1" [disabled] [selected]
+  - option "1"
+- text: 11 records © 2022 Evershop. All Rights Reserved. Version 2.0.1
+```

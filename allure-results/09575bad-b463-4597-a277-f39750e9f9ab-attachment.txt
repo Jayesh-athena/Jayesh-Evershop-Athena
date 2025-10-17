@@ -1,0 +1,15 @@
+product count: 12
+[
+  'Floral Maxi Dress',
+  'Classic Leather Loafers',
+  'Denim Skinny Jeans',
+  'Jayesh Dhangar',
+  'Striped Cotton Sweater',
+  'New product 1',
+  'New product 3',
+  'New product 1',
+  'Updated product D',
+  'New product C ',
+  'New product A',
+  'Updated product E'
+]

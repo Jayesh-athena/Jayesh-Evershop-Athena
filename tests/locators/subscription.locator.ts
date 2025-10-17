@@ -24,7 +24,7 @@ export const applocators = {
   nextButton:".next",
   coupon : {role:"link", name: "Coupons"} as RoleLocator,
   // Customers page
-  Productlink : {role: "link" as const, name: "Products" } as RoleLocator,
+  Productlink : {role: "link" as const, name: "Products", exact: true } as RoleLocator,
   customersLink: { role: "link" as const, name: "Customers" }as RoleLocator,
   customerStatus: "text=StatusEnabled",
   startDate: {role:"textbox", name: "Start date" }as RoleLocator,
@@ -35,9 +35,9 @@ export const applocators = {
    //Product page
    NewProductclick :  {role:"link", name: "New Product" } as RoleLocator, 
    productnameInput: {role:"textbox", name: "Name" } as RoleLocator,
-   skuInput: {role:"textbox", name: "sku" } as RoleLocator,
-   priceInput: {role:"textbox", name: "price" } as RoleLocator,
-   weightInput:  {role:"textbox", name: "weight" } as RoleLocator,
+   skuInput: {role:"textbox", name: "SKU" } as RoleLocator,
+   priceInput: {role:"textbox", name: "Price" } as RoleLocator,
+   weightInput:  {role:"textbox", name: "Weight" } as RoleLocator,
    categorySelect: 'text=Select category',
    descriptionBox: 'textarea[placeholder="Description"]',
   urlKey: '#urlKey',
@@ -105,8 +105,10 @@ export function getLocator(page: Page,locator:RoleLocator| string): Locator {
   {
     return page.locator(locator);
   }
-  const {role,name,exact}=locator;
-  return page.getByRole(role,{name,exact});
+  // default to exact matching for role locators unless explicitly set otherwise
+  const {role,name,exact} = locator;
+  const opts = { name, exact: exact ?? true } as Parameters<Page["getByRole"]>[1];
+  return page.getByRole(role, opts);
 }
  
  

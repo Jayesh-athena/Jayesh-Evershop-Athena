@@ -9,7 +9,13 @@
     "start": "evershop start",
     "start:debug": "evershop start --debug",
     "user:create": "evershop user:create",
-    "user:changePassword": "evershop user:changePassword"
+    "user:changePassword": "evershop user:changePassword",
+    "test": "npx playwright TC01-CreateNewProduct.spec.ts,TC02-UpdateProduct.spec.ts,TC03-UpdateProductImages.spec.ts,TC04-DatabaseValidation.spec.ts",
+    "test:allure": "npx playwright test --reporter=line,allure-playwright",
+   "allure:generate": "npx allure generate ./allure-results --clean",
+   "allure:open": "cmd /c \"npx allure open ./allure-report\""
+ 
+    
   },
   "keywords": [],
   "author": "",

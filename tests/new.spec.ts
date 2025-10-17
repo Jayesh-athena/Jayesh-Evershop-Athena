@@ -8,7 +8,7 @@ import { error } from "console";
  
  
  
-test("Handle By Pages and context gracefully", async ({ page, context }) => {
+test.only ("Handle By Pages and context gracefully", async ({ page, context }) => {
  
   // Login As admin
   await page.goto(ENV.adminURL);

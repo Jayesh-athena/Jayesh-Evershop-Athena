@@ -1,0 +1,134 @@
+# Page snapshot
+
+```yaml
+- link "EVERSHOP":
+  - /url: http://localhost:3000/admin
+  - img
+  - text: EVERSHOP
+- img
+- textbox "Search"
+- link "a":
+  - /url: "#"
+- list:
+  - listitem:
+    - text: Quick links
+    - list:
+      - listitem:
+        - link "Dashboard":
+          - /url: http://localhost:3000/admin
+      - listitem:
+        - link "New Product":
+          - /url: http://localhost:3000/admin/products/new
+      - listitem:
+        - link "New Coupon":
+          - /url: http://localhost:3000/admin/coupon/new
+  - listitem:
+    - text: Catalog
+    - list:
+      - listitem:
+        - link "Products":
+          - /url: http://localhost:3000/admin/products
+      - listitem:
+        - link "Categories":
+          - /url: http://localhost:3000/admin/categories
+      - listitem:
+        - link "Collections":
+          - /url: http://localhost:3000/admin/collections
+      - listitem:
+        - link "Attributes":
+          - /url: http://localhost:3000/admin/attributes
+  - listitem:
+    - text: Sale
+    - list:
+      - listitem:
+        - link "Orders":
+          - /url: http://localhost:3000/admin/orders
+  - listitem:
+    - text: Customer
+    - list:
+      - listitem:
+        - link "Customers":
+          - /url: http://localhost:3000/admin/customers
+  - listitem:
+    - text: Promotion
+    - list:
+      - listitem:
+        - link "Coupons":
+          - /url: http://localhost:3000/admin/coupons
+  - listitem:
+    - text: CMS
+    - list:
+      - listitem:
+        - link "Pages":
+          - /url: http://localhost:3000/admin/pages
+      - listitem:
+        - link "Widgets":
+          - /url: http://localhost:3000/admin/widgets
+  - listitem:
+    - link "Setting":
+      - /url: http://localhost:3000/admin/setting/store
+    - list
+- link:
+  - /url: http://localhost:3000/admin/coupons
+- heading "Create a new coupon" [level=1]
+- heading "General" [level=2]
+- text: Coupon code
+- textbox "Enter coupon code": coupon112
+- text: Description
+- textbox "Description": coupon test
+- text: Status
+- link:
+  - /url: "#"
+- text: Discount amount
+- textbox "Discount amount": "12"
+- text: Start date
+- textbox "Start date"
+- img
+- text: End date
+- textbox "End date"
+- img
+- checkbox "Free shipping?"
+- text: Free shipping?
+- heading "Discount Type" [level=2]
+- radio "Fixed discount to entire order"
+- text: Fixed discount to entire order
+- radio "Percentage discount to entire order"
+- text: Percentage discount to entire order
+- radio "Fixed discount to specific products"
+- text: Fixed discount to specific products
+- radio "Percentage discount to specific products"
+- text: Percentage discount to specific products
+- radio "Buy X get Y"
+- text: Buy X get Y
+- heading "Order conditions" [level=2]
+- text: Minimum purchase amount
+- textbox "Enter minimum purchase amount"
+- text: Minimum purchase qty
+- textbox "Enter minimum purchase qty"
+- text: Order must contains product matched bellow conditions(All)
+- table:
+  - rowgroup:
+    - row "Key Operator Value Minimum quantity":
+      - cell "Key"
+      - cell "Operator"
+      - cell "Value"
+      - cell "Minimum quantity"
+      - cell
+  - rowgroup
+- img
+- link "Add product":
+  - /url: "#"
+- heading "Customer conditions" [level=2]
+- log
+- text: Select...
+- combobox
+- text: Customer email (empty for all)
+- textbox "Enter customer emails"
+- img
+- text: Use comma when you have multi email Customer's purchase
+- textbox "Enter purchased amount"
+- text: Minimum purchased amount
+- button "Cancel"
+- button "Save"
+- text: © 2022 Evershop. All Rights Reserved. Version 2.0.1
+```

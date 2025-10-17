@@ -1,0 +1,41 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - list:
+    - listitem:
+      - link "Shop ❤️":
+        - /url: javascript:void(0)
+      - list:
+        - listitem:
+          - link "Men":
+            - /url: /men
+        - listitem:
+          - link "Women":
+            - /url: /women
+    - listitem:
+      - link "About us":
+        - /url: /page/about-us
+- link:
+  - /url: /
+  - img
+- link:
+  - /url: "#"
+  - img
+- link:
+  - /url: http://localhost:3000/cart
+- link:
+  - /url: http://localhost:3000/account/login
+- main:
+  - link "Home":
+    - /url: /
+  - text: / Not found
+  - heading "404 Page Not Found" [level=1]
+  - text: The page you requested does not exist.
+  - link "Continue shopping":
+    - /url: http://localhost:3000/
+- img
+- img
+- img "PayPal"
+- text: © 2022 Evershop. All Rights Reserved.
+```

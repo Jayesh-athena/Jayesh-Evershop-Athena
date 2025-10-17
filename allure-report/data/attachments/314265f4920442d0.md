@@ -1,0 +1,165 @@
+# Page snapshot
+
+```yaml
+- link "EVERSHOP":
+  - /url: http://localhost:3000/admin
+  - img
+  - text: EVERSHOP
+- img
+- textbox "Search"
+- link "a":
+  - /url: "#"
+- list:
+  - listitem:
+    - text: Quick links
+    - list:
+      - listitem:
+        - link "Dashboard":
+          - /url: http://localhost:3000/admin
+      - listitem:
+        - link "New Product":
+          - /url: http://localhost:3000/admin/products/new
+      - listitem:
+        - link "New Coupon":
+          - /url: http://localhost:3000/admin/coupon/new
+  - listitem:
+    - text: Catalog
+    - list:
+      - listitem:
+        - link "Products":
+          - /url: http://localhost:3000/admin/products
+      - listitem:
+        - link "Categories":
+          - /url: http://localhost:3000/admin/categories
+      - listitem:
+        - link "Collections":
+          - /url: http://localhost:3000/admin/collections
+      - listitem:
+        - link "Attributes":
+          - /url: http://localhost:3000/admin/attributes
+  - listitem:
+    - text: Sale
+    - list:
+      - listitem:
+        - link "Orders":
+          - /url: http://localhost:3000/admin/orders
+  - listitem:
+    - text: Customer
+    - list:
+      - listitem:
+        - link "Customers":
+          - /url: http://localhost:3000/admin/customers
+  - listitem:
+    - text: Promotion
+    - list:
+      - listitem:
+        - link "Coupons":
+          - /url: http://localhost:3000/admin/coupons
+  - listitem:
+    - text: CMS
+    - list:
+      - listitem:
+        - link "Pages":
+          - /url: http://localhost:3000/admin/pages
+      - listitem:
+        - link "Widgets":
+          - /url: http://localhost:3000/admin/widgets
+  - listitem:
+    - link "Setting":
+      - /url: http://localhost:3000/admin/setting/store
+    - list
+- link:
+  - /url: http://localhost:3000/admin/products
+- heading "Create a new product" [level=1]
+- heading "General" [level=2]
+- text: Name
+- textbox "Name": New product 1
+- text: SKU
+- textbox "SKU": test
+- text: Price
+- textbox "Price": "2000"
+- text: USD Weight
+- textbox "Weight": "70"
+- text: kg Category
+- link "Select category":
+  - /url: "#"
+- text: Tax class
+- combobox "Tax class":
+  - option "None" [selected]
+  - option "Taxable Goods"
+- text: Description
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- heading "Media" [level=2]
+- img
+- heading "Search engine optimize" [level=2]
+- text: Url key
+- textbox: kye1
+- text: Meta title
+- textbox: metatitle1
+- text: Meta keywords
+- textbox: metakeyword1
+- text: Meta description
+- textbox "Meta description": description1
+- heading "Product status" [level=2]
+- text: Status
+- radio "Disabled"
+- text: Disabled
+- radio "Enabled" [checked]
+- text: Enabled Visibility
+- radio "Not visible"
+- text: Not visible
+- radio "Visible" [checked]
+- text: Visible
+- heading "Inventory" [level=2]
+- text: Manage stock?
+- radio "No"
+- text: "No"
+- radio "Yes" [checked]
+- text: Yes Stock availability
+- radio "No"
+- text: "No"
+- radio "Yes" [checked]
+- text: Yes Quantity
+- textbox "Quantity": "20"
+- heading "Attribute group" [level=3]
+- combobox:
+  - option "Please select" [disabled]
+  - option "Default" [selected]
+- heading "Attributes" [level=3]
+- table:
+  - rowgroup:
+    - row "Color Black":
+      - cell "Color"
+      - cell "Black":
+        - combobox:
+          - option "Please select" [disabled]
+          - option "White"
+          - option "Black" [selected]
+          - option "Yellow"
+    - row "Size XL":
+      - cell "Size"
+      - cell "XL":
+        - combobox:
+          - option "Please select" [disabled]
+          - option "XXL"
+          - option "XL" [selected]
+          - option "SM"
+- button "Cancel"
+- button "Save"
+- text: © 2022 Evershop. All Rights Reserved. Version 2.0.1
+```
